@@ -1,0 +1,19 @@
+schema: "https://xvjsnqg9.api.sanity.io/v1/graphql/production/default"
+documents: "packages/gql/src/**/*.graphql"
+extensions:
+  codegen:
+    generates:
+      packages/gql/src/generated/graphql.ts:
+        plugins:
+          - "typescript"
+          - "typescript-operations"
+          - typescript-react-query
+        config:
+          fetcher:
+            endpoint: 'https://xvjsnqg9.api.sanity.io/v1/graphql/production/default'
+            fetchParams:
+              headers:
+                Content-Type: application/json
+      # ./graphql.schema.json:
+      #   plugins:
+      #     - "introspection"

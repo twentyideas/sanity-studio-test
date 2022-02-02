@@ -1,0 +1,13 @@
+query AllMovies {
+  allMovie {
+    title
+    _id
+  }
+}
+
+query AllPersons {
+  allPerson {
+    name
+    _id
+  }
+}
