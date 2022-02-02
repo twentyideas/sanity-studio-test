@@ -3269,6 +3269,7 @@ __metadata:
     "@graphql-codegen/typescript-react-query": ^3.5.0
     graphql: ^16.3.0
     graphql-config: ^4.1.0
+    react-query: ^3.34.12
   languageName: unknown
   linkType: soft
 
