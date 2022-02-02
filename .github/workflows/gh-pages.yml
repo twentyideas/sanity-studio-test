@@ -33,7 +33,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - run: yarn workspaces focus web @test/gql
+      # - run: yarn workspaces focus web @test/gql
+      - run: yarn
       - run: yarn build
 
       - name: Deploy
